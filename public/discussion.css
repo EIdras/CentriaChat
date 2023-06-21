@@ -1,0 +1,311 @@
+:root {
+    --main-color: #3eba67;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.window-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.window {
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    overflow-y: auto;
+}
+
+.window::-webkit-scrollbar {
+    width: 10px;
+}
+
+.window::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.window::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3); /* Add this */
+    transition: background-color 0.3s ease; /* Add this for a smooth transition */
+    margin-bottom: 10px;
+    color: #3D3D3D;   
+    font-weight: bold; 
+}
+
+.chat:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Lighter when hovered */
+}
+
+.chat:active, .chat.selected {
+    background-color: rgba(255, 255, 255, 0.8); /* Darker when clicked */
+}
+
+#add-channel {
+    background-color:#afffaf88;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+#add-channel:hover {
+    background-color:#afffafcc;
+}
+
+.chat img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+    object-fit: cover;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    flex-grow: 1;
+}
+
+.message {
+    max-width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: var(--main-color);
+}
+
+.message.sent:hover {
+    background-color: #37a65c;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #2196F3;
+}
+
+.message.received:hover {
+    background-color: #3088cf;
+}
+
+
+.sender-name {
+    font-weight: bold;
+}
+
+.message-input-container {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    height: 2em;
+    margin-top: auto;
+    z-index: 100;
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    resize: none;
+    height: 30px; /* Adjust this value as per your needs */
+    line-height: 30px; /* Make this value same as height */
+    background-color: transparent;
+}
+
+.send-button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bg-gray {
+    background-color: #c7c7c7;
+}
+
+.settings-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(200, 200, 200, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-in-out;
+    z-index: 150;
+}
+
+.settings-button:hover {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(215, 215, 215, 0.7);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+#settings-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 200;
+    border-radius: 20px;
+    overflow: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.settings-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+
+.modal-title {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.modal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    color: white;
+    font-size: 1.5em;
+}
+
+.modal-item label {
+    margin-right: 20px;
+}
+
+.settings-action-container {
+    margin-top: auto;
+    align-self: center;
+}
+
+.settings-action-button {
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings-action-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#logout-button {
+    color: rgba(255, 0, 0, 0.5);
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+#logout-button:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.setting-textarea {
+    flex: 1;
+    padding: 10px;
+    max-width: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    resize: none;
+    height: 1em;
+    line-height: 1em;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.setting-img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.color-square-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}

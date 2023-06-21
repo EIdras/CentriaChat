@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    image: eldryx/centriachat-web
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=mongodb://db:27017/centria_chat
+  db:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data_container:/data/db
+volumes:
+  mongodb_data_container:

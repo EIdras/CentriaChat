@@ -1,0 +1,159 @@
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif !important;
+    background: linear-gradient(45deg, #3F5EFB, #FC466B);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 0.1em;
+    margin-bottom: 1em;
+}
+
+.login-container {
+    position: relative;
+    text-align: center;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: inherit;
+    border-radius: inherit;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.extra-window {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.extra-window::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: inherit;
+    border-radius: inherit;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+
+#extra-window-1 {
+    width: 40px;
+    height: 40px;
+    top: -30px;
+    left: -20px;
+    z-index: 1;
+}
+
+#extra-window-2 {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: -80px;
+    z-index: 2;
+}
+
+#extra-window-3 {
+    width: 60px;
+    height: 60px;
+    bottom: -50px;
+    right: -30px;
+    z-index: 2;
+}
+
+.login-container input {
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 200px;
+    margin: 1em auto;
+    padding: 0.6em;
+    border-radius: 15px;
+    border: none;
+    font-weight: 450;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.login-container input:focus {
+    outline: #ffffff solid 1px;
+}
+
+.login-container input::placeholder {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.login-container button {
+    display: block;
+    width: 210px;
+    margin: 1em auto;
+    padding: 0.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: #007BFF;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+#switch-log-register {
+    color: white;
+    cursor: pointer;
+}
+
+#switch-log-register:hover {
+    text-decoration: underline;
+}
+
+#error-message {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.bg-green {
+    background-color: rgb(10, 170, 10) !important;
+}

@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "648dd522f58e4c637608fb45"
+  },
+  "name": "Study Group",
+  "icon": "https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg",
+  "participants": [
+    {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    },
+    {
+      "$oid": "6491e61bef47827767fad9b6"
+    },
+    {
+      "$oid": "6491e63eef47827767fad9bb"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648dd666f58e4c637608fb49"
+  },
+  "name": "Friends",
+  "icon": "https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782_1280.jpg",
+  "participants": [
+    {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    },
+    {
+      "$oid": "6491e61bef47827767fad9b6"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "648dd6e9f58e4c637608fb4a"
+  },
+  "name": "Clubbers",
+  "icon": "https://cdn.pixabay.com/photo/2023/05/30/16/57/taco-8029161_1280.png",
+  "participants": [
+    {
+      "$oid": "6491e63eef47827767fad9bb"
+    },
+    {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    }
+  ]
+}]

@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "6491ecfc9d78c7304eab1745"
+  },
+  "channelId": {
+    "$oid": "648dd522f58e4c637608fb45"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    },
+    "username": "Jack"
+  },
+  "text": "Hei, It's Jack !",
+  "timestamp": {
+    "$date": "2023-06-20T18:16:28.060Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ed729d78c7304eab1753"
+  },
+  "channelId": {
+    "$oid": "648dd522f58e4c637608fb45"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e61bef47827767fad9b6"
+    },
+    "username": "Ma'"
+  },
+  "text": "Nice to meet you, I'm Maria :)",
+  "timestamp": {
+    "$date": "2023-06-20T18:18:26.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ed889d78c7304eab1757"
+  },
+  "channelId": {
+    "$oid": "648dd666f58e4c637608fb49"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e61bef47827767fad9b6"
+    },
+    "username": "Ma'"
+  },
+  "text": "Welcome everyone !",
+  "timestamp": {
+    "$date": "2023-06-20T18:18:48.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ee8e9d78c7304eab1761"
+  },
+  "channelId": {
+    "$oid": "648dd666f58e4c637608fb49"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e61bef47827767fad9b6"
+    },
+    "username": "Maria"
+  },
+  "text": "Here is our private channel",
+  "timestamp": {
+    "$date": "2023-06-20T18:23:10.705Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ee999d78c7304eab1765"
+  },
+  "channelId": {
+    "$oid": "648dd666f58e4c637608fb49"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    },
+    "username": "Jack"
+  },
+  "text": "Nice !",
+  "timestamp": {
+    "$date": "2023-06-20T18:23:21.124Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491eeb69d78c7304eab1769"
+  },
+  "channelId": {
+    "$oid": "648dd6e9f58e4c637608fb4a"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    },
+    "username": "Jack"
+  },
+  "text": "Hey guys, wanna eat somewhere tonight ?",
+  "timestamp": {
+    "$date": "2023-06-20T18:23:50.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ef0f9d78c7304eab1776"
+  },
+  "channelId": {
+    "$oid": "648dd6e9f58e4c637608fb4a"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e63eef47827767fad9bb"
+    },
+    "username": "SuperDavid"
+  },
+  "text": "Sure, let's meet at 8 PM ?",
+  "timestamp": {
+    "$date": "2023-06-20T18:25:19.631Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ef1b9d78c7304eab1778"
+  },
+  "channelId": {
+    "$oid": "648dd6e9f58e4c637608fb4a"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e5b6ef47827767fad9b0"
+    },
+    "username": "Jack"
+  },
+  "text": "Ok",
+  "timestamp": {
+    "$date": "2023-06-20T18:25:31.770Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491ef389d78c7304eab177c"
+  },
+  "channelId": {
+    "$oid": "648dd522f58e4c637608fb45"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e63eef47827767fad9bb"
+    },
+    "username": "SuperDavid"
+  },
+  "text": "Hello there, I'm David",
+  "timestamp": {
+    "$date": "2023-06-20T18:26:00.659Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6491f29b22f189c7c4310c42"
+  },
+  "channelId": {
+    "$oid": "648dd522f58e4c637608fb45"
+  },
+  "sender": {
+    "id": {
+      "$oid": "6491e63eef47827767fad9bb"
+    },
+    "username": "SuperDavid"
+  },
+  "text": "Nice to meet you too !",
+  "timestamp": {
+    "$date": "2023-06-20T18:40:27.676Z"
+  },
+  "__v": 0
+}]

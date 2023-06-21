@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="discussion.css">
+</head>
+<body class="hidden">
+    <div class="window-container">
+        <div class="window chat-list">
+            <!-- div class="chat" id="add-channel">
+                <p> Add channel </p>
+            </div -->
+        </div>
+        <div class="window chat-window">
+            <div class="chat-messages" id="message-list">
+                <div class="message received">
+                    <div class="sender-name">BOT</div>
+                    <div class="text">Hi there! If you want to start chatting, just select a channel on the left pannel !</div>
+                </div>
+            </div>
+            <div class="message-input-container">
+                <textarea class="message-input" placeholder="Type your message..." disabled></textarea>
+                <button class="send-button hidden"><i class="fa-solid fa-paper-plane fa-lg"></i></button>
+            </div>
+        </div>
+    </div>
+    <button class="settings-button"><i class="fa-solid fa-cog fa-lg"></i></button>
+    <div class="settings-modal-background"></div>
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <h1 class="modal-title">Settings</h1>
+            <div class="modal-item">
+                <label for="profile-picture">Profile picture</label>
+                <a id="profile-picture-picker"><img id="profile-picture" class="setting-img"></img></a>
+            </div>
+            <div class="modal-item">
+                <label for="display-name">Display Name</label>
+                <textarea id="display-name" class="setting-textarea"></textarea>
+            </div>
+            <div class="modal-item">
+                <label for="theme-color">Theme color</label>
+                <div class="color-square-container">
+                    <div class="square" id="square-1"></div>
+                    <div class="square" id="square-2"></div>
+                </div>
+            </div>
+            <div class="settings-action-container">
+                <button id="logout-button" class="settings-action-button">Logout</button>
+                <button id="save-button" class="settings-action-button">Save</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/54c950ca38.js" crossorigin="anonymous"></script>
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+<script src="discussion.js"></script>
+</html>

@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #3F5EFB;
+    --secondary-color: #FC466B;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+}
+
+.hidden {
+    opacity: 0 !important;
+    display: none !important;
+}
